@@ -9,10 +9,10 @@ from utilsdf.functions import bot_on
 from utilsdf.db import Database
 from utilsdf.vars import PREFIXES
     
-API_ID = '28386099'
-API_HASH = 'a0057fbf1ca49ce5e9d26fd4afd6e78b'
-BOT_TOKEN = '7195738934:AAE5ifhCN-JFDQ7aHjuioFWbi_4GgY9Noug'
-CHANNEL_LOGS = '-1001897182152'
+API_ID = '26043952'
+API_HASH = '96b8dea447ef580b5b75b01ccc3ab710'
+BOT_TOKEN = '7633669044:AAFPAjaTej2gIMNVDJXcK1AXU6qdO9TSZ-w'
+CHANNEL_LOGS = '-1002253188217'
 
 app = Client(
     "bot",
@@ -53,7 +53,7 @@ async def user_ban(client: Client, m: Message):
         return
     chat_id = m.chat.id
     with Database() as db:
-        if chat_id == -1001897182152:
+        if chat_id == -1002474159521:
             async for member in m.chat.get_members():
                 if not member.user:
                     continue
