@@ -8,7 +8,14 @@ from pyrogram.types import CallbackQuery, Message
 from utilsdf.functions import bot_on
 from utilsdf.db import Database
 from utilsdf.vars import PREFIXES
-    
+
+
+DB_PATH = "/data/db_bot.db"
+
+# Si la base de datos no existe, la descarga desde GitHub
+if not os.path.exists(DB_PATH):
+    os.system(f"mkdir -p /data && wget -O {DB_PATH} 'https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/assets/db_bot.db'")
+
 API_ID = '26043952'
 API_HASH = '96b8dea447ef580b5b75b01ccc3ab710'
 BOT_TOKEN = '7633669044:AAFPAjaTej2gIMNVDJXcK1AXU6qdO9TSZ-w'
