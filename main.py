@@ -10,7 +10,7 @@ from utilsdf.db import Database
 from utilsdf.vars import PREFIXES
 
 
-DB_PATH = "/data/db_bot.db"
+DB_PATH = "/assets/db_bot.db"
 
 # Si la base de datos no existe, la descarga desde GitHub
 if not os.path.exists(DB_PATH):
