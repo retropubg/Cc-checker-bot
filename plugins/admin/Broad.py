@@ -22,7 +22,7 @@ headers = {
 
 
 
-ID_OWNER = getenv("ID_OWNER")
+ID_OWNER = getenv("6699273462")
 
 
 @Client.on_message(filters.command("broad", PREFIXES))
