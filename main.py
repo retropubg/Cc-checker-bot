@@ -71,7 +71,7 @@ async def user_ban(client: Client, m: Message):
                     continue
                 await m.chat.ban_member(user_id)
                 info=db.get_info_user(user_id)
-                await client.send_message(-1001897182152, f"<b>User eliminado: @{info['USERNAME']}</b>")
+                await client.send_message(-1002474159521, f"<b>User eliminado: @{info['USERNAME']}</b>")
 
         #         if not db.is_admin(m.from_user.id):
         #             return await m.reply(
