@@ -14,7 +14,7 @@ DB_PATH = "/data/db_bot.db"
 
 # Si la base de datos no existe, la descarga desde GitHub
 if not os.path.exists(DB_PATH):
-    os.system(f"mkdir -p /data && wget -O {DB_PATH} 'https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/assets/db_bot.db'")
+    os.system(f"mkdir -p /data && wget -O {DB_PATH} 'https://raw.githubusercontent.com/retropubg/Cc-checker-bot/main/assets/db_bot.db'")
 
 API_ID = '26043952'
 API_HASH = '96b8dea447ef580b5b75b01ccc3ab710'
