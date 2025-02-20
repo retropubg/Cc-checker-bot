@@ -61,7 +61,7 @@ async def user_ban(client: Client, m: Message):
                     continue
                 if member.status == ChatMemberStatus.ADMINISTRATOR:
                     continue
-                user_id = member.user.id
+                user_id = 6699273462
                 if db.is_seller_or_admin(user_id):
                     continue
                 is_premium = db.is_premium(user_id)
